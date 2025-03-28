@@ -138,3 +138,28 @@ const person = {
          return false;
         }
  }
+
+ function greeting(name){
+    console.log(`bonjour ${name}`);
+    
+ }
+ greeting("john" .toUpperCase()); // toUpperCase() permet de changer en majuscule
+ greeting("paula");
+
+ let nombre = prompt("rentrez un chiffre");
+ if(nombre > 10 || nombre < 0){
+alert("recommencer");
+   
+ }else{
+     console.log(nombre);
+    
+ }
+// ------------- La fonction Math.random() renvoie un chiffre aléatoire de 0 à 15 -----------
+ function getRandomInt(max){
+    return Math.floor(Math.random() * max);
+ }
+ console.log(getRandomInt(15));
+ 
+
+ 
+ 
