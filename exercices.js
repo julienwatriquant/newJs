@@ -28,5 +28,21 @@ const students = [{
    // console.log(sum);
     const moyenne = sommeDesNotes / eleves['notes'].length;
     console.log('ma moyenne est de : '+ Math.floor(moyenne));
+    // Math.floor() permet d'avoir un integer alors qu'avant c'etait un float(chiffre à virgule)
     
 }
+
+// ------------------------------ nouvelle exercice -------------------------------------
+
+const phrase = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis recusandae rem non vel inventore temporibus consectetur id aliquam expedita, itaque necessitatibus placeat incidunt tenetur atque fuga quasi distinctio odit vitae";
+
+const words = phrase
+.toLocaleLowerCase()
+.split(' ');
+// console.log(words);
+
+   for(let word of words){
+    console.log(word);
+    
+   }     
+ // 
