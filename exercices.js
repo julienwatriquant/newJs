@@ -27,6 +27,6 @@ const students = [{
                 acc + val , 0);
    // console.log(sum);
     const moyenne = sommeDesNotes / eleves['notes'].length;
-    console.log('ma moyenne est de : '+ moyenne);
+    console.log('ma moyenne est de : '+ Math.floor(moyenne));
     
 }
