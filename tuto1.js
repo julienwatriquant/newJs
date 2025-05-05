@@ -275,9 +275,24 @@ const students = [{
         console.log(h);
     }    
 
-    console.log(pets.includes('horse'));
+    console.log(pets.includes('horse')); // includes() fonction permettant de verifier si l'élément est horse est présent dans la constante pets. dans ce cas repond false; 
     
+    console.log(pets.indexOf('bird')); // indexOf() permet de voir la position de l'élément dans le tableau ; dans ce cas cela affiche 2
     
+    const persons = [{firstame : 'john',
+                        lastname : 'doe'},
+                        {firstame : 'pepe',
+                            lastname : 'doe'},
+                            {firstame : 'jul',
+                                lastname : 'doe'},
+                                {firstame : 'jean',
+                                    lastname : 'doe'},
+    ];
+
+    console.log(persons
+                .map((p) => p.firstame + ' => '+p.lastname)
+                .join('\n')
+    );
     
 
  
