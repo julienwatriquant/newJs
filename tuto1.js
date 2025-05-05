@@ -252,10 +252,33 @@ const students = [{
    // console.log(sum);
     const moyenne = sommeDesNotes / eleves['notes'].length;
     console.log('ma moyenne est de : '+ Math.floor(moyenne));
+}  
+    
+    const a = [1,12,13];
+    const b = [0,0,0]
+    const c = a.concat(b); // concat() methode qui permet de fusionner deux tableaux
+    console.log(c);
+    
+    console.log(a[a.length -1]); // affiche 13
+    console.log(a.at(-1)); // methode at() permet d'eviter [];
+
+    const d = b.fill(6);
+    console.log(d);
+    console.log(a.at(1)); // affiche 12
+
+    const goodNotes = a.filter((chiffre) => chiffre <=10); // la fonction filter() permet de filtrer; dans ce cas je lui est demandé de filtrer les notes inférieur ou égale a 10
+    console.log(goodNotes); // affiche 1
+    
+    const pets = ['cats','dog','bird','lion'];
+    console.log(pets);
+    for(let h of pets){  // boucle permettant de voir les éléments de mon tableau
+        console.log(h);
+    }    
+
+    console.log(pets.includes('horse'));
     
     
- 
- }
+    
 
  
  
