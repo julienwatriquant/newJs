@@ -293,11 +293,66 @@ const students = [{
                 .map((p) => p.firstame + ' => '+p.lastname)
                 .join('\n')
     );
+
+    const pets1 = [{animal : 'giraphe',categorie : '*'},
+                    {animal : 'cats',categorie : '**'},
+                    {animal : 'dogs',categorie : '***'},
+                    {animal : 'shark',categorie : '******'},
+    ]
+    console.log(pets1.map(p => p.animal +' => '+ p.categorie)
+                .join('\n'));
     
+    
+// fonction usuelle pop() permet de supprimer le dernier élément d'un tableau et le retourne
+const pets2 = pets1.pop()
+console.log(pets2); // affiche  {animal: 'shark', categorie: '******'}
 
+const note1 = ['12','15','56'];
+
+
+// La méthode reduce() applique une fonction qui est un « accumulateur » et qui traite chaque valeur d'une liste (de la gauche vers la droite) afin de la réduire à une seule valeur.
+const array1 = [1, 2, 3, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue,
+);                  
+
+console.log(sumWithInitial);     // affiche la somme des chiffres soit 10
+
+const array2 = [14,25,30];
+const init = 0;
+const add = array2.reduce((acc , val) =>  //
+     acc + val , init
+);
+console.log(add); // somme des nombres dans array2  soit 69
  
+// les methodes des objects
+
+//  La méthode Object.assign() est utilisée afin de copier les valeurs de toutes les propriétés directes (non héritées) d'un objet qui sont énumérables sur un autre objet cible. Cette méthode renvoie l'objet cible.
+
+const person = {firstname : 'john' , lastname : 'doe'};
+const person2 = Object.assign({},person);
+console.log(person2);
+
+// La méthode Object.create() crée un nouvel objet avec un prototype donné et des propriétés données.
+const person3 = Object.create(person);
+console.log(person3);
+
+ const voiture = {
+    marque : 'mercedes',
+    modele : 'class c',
+    annee : 2025
+ };
+ console.log(voiture.marque); // affiche mercedes
+
+ // La méthode Object.freeze() permet de geler un objet, c'est-à-dire qu'on empêche d'ajouter de nouvelles propriétés, de supprimer ou d'éditer des propriétés existantes, y compris en ce qui concerne leur caractère énumérable, configurable ou pour l'accès en écriture. L'objet devient ainsi immuable. La méthode renvoie l'objet ainsi « gelé ».
  
-
-
+Object.freeze(voiture);
+voiture.marque = 'bmw';
+ console.log(voiture.marque);
+ 
  
  
